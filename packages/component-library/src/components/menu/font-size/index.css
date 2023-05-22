@@ -1,0 +1,57 @@
+.fontSize-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 20px;
+  justify-content:center;
+}
+.fontSize {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  border: none;
+  border-radius: 3px;
+  color: #000;
+  cursor: pointer;
+}
+.fontSize:hover {
+  background-color: var(--hover-bg-color);
+}
+.sizeList {
+  position: absolute;
+  left: 1px;
+  top: 30px;
+  border-radius: 4px;
+  background-color: #fff;
+  max-height: 70vh;
+  height: auto;
+  overflow-y: scroll;
+  box-shadow: 0px 0px 1px #ddd;
+}
+.sizeList .size {
+  padding: 10px;
+  line-height: 20px;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.sizeList .size:hover {
+  background-color: var(--hover-bg-color);
+}
+
+.sizeList::-webkit-scrollbar {
+  width: 2px;    
+  height: 4px;
+}
+.sizeList::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+  background: rgba(0,0,0,0.1);
+}
+.sizeList::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+  border-radius: 0;
+  background: rgba(0,0,0,0.1);
+}

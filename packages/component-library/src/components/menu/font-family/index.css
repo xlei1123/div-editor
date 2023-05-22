@@ -1,0 +1,60 @@
+.fontFamily-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 70px;
+  height: 20px;
+  justify-content:center;
+}
+.fontFamily {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 3px;
+  color: #000;
+  cursor: pointer;
+  font-size: 12px;
+}
+.fontFamily:hover {
+  background-color: var(--hover-bg-color);
+}
+
+.familyList {
+  position: absolute;
+  left: 1px;
+  top: 30px;
+  border-radius: 4px;
+  background-color: #fff;
+  max-height: 70vh;
+  height: auto;
+  overflow-y: scroll;
+}
+.familyList .family {
+  padding: 10px;
+  line-height: 20px;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  box-shadow: 0px 0px 1px #ddd;
+  color: #000;
+}
+.familyList .family:hover {
+  background-color: var(--hover-bg-color);
+}
+
+.familyList::-webkit-scrollbar {
+  width: 2px;    
+  height: 4px;
+}
+.familyList::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+  background: rgba(0,0,0,0.1);
+}
+.familyList::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+  border-radius: 0;
+  background: rgba(0,0,0,0.1);
+
+}

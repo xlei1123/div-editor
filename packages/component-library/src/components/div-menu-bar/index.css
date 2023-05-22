@@ -1,0 +1,40 @@
+.menuBar {
+  display: flex;
+  align-items: center;
+  height: 22px;
+  padding: 10px;
+  box-shadow: 0px 1px 1px #eee;
+  background-color: #ddd;
+}
+.componentMenu {
+  margin-right: 5px;
+}
+.menu-item {
+  background-color: transparent;
+  border: none;
+  border-radius: 0.4rem;
+  color: #000;
+  cursor: pointer;
+  height: 1.75rem;
+  margin-right: 0.25rem;
+  padding: 0.25rem;
+  width: 1.75rem;
+}
+.menu-item svg {
+  fill: currentColor;
+  height: 100%;
+  width: 100%;
+}
+
+.menu-item:hover,
+.menu-item.is-active {
+  background-color: #ccc;
+}
+
+.divider {
+  background-color: #ccc;
+  height: 1.25rem;
+  margin-left: 0.5rem;
+  margin-right: 0.75rem;
+  width: 1px;
+}

@@ -1,0 +1,16 @@
+.menu-item {
+  padding: 0px;
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: transparent;
+  text-align: center;
+  overflow: hidden;
+  vertical-align: inherit;
+}
+.menu-item svg {
+  fill: currentColor;
+  height: 100%;
+  width: 100%;
+}

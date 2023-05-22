@@ -1,0 +1,1240 @@
+{
+  "timestamp": "2023-05-22T11:11:35",
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "3.2.2",
+    "typescriptVersion": "4.9.5"
+  },
+  "components": [
+    {
+      "filePath": "./src/components/div-editor/index.tsx",
+      "encapsulation": "none",
+      "tag": "div-editor",
+      "readme": "# div-editor\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "editorExtensions",
+          "type": "any[]",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "[]",
+          "values": [
+            {
+              "type": "any[]"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [
+        {
+          "event": "editorInit",
+          "detail": "Editor",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "",
+          "docsTags": []
+        }
+      ],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [
+        "div-menu",
+        "div-tiptap"
+      ],
+      "dependencyGraph": {
+        "div-editor": [
+          "div-menu",
+          "div-tiptap"
+        ],
+        "div-menu": [
+          "div-menu-clear-format",
+          "div-util-divider",
+          "div-menu-insert",
+          "div-menu-font-family",
+          "div-menu-font-size",
+          "div-menu-font-color",
+          "div-menu-font-background",
+          "div-menu-font-italic",
+          "div-menu-font-bold",
+          "div-menu-font-delline",
+          "div-menu-font-underline",
+          "div-menu-letter-space",
+          "div-menu-line-height",
+          "div-menu-todo",
+          "div-menu-list",
+          "div-menu-number-list",
+          "div-menu-code",
+          "div-menu-quote"
+        ],
+        "div-menu-insert": [
+          "div-menu-image",
+          "div-menu-table"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/div-menu/index.tsx",
+      "encapsulation": "none",
+      "tag": "div-menu",
+      "readme": "# div-menu\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "editor",
+          "type": "Editor",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "Editor"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "div-editor"
+      ],
+      "dependencies": [
+        "div-menu-clear-format",
+        "div-util-divider",
+        "div-menu-insert",
+        "div-menu-font-family",
+        "div-menu-font-size",
+        "div-menu-font-color",
+        "div-menu-font-background",
+        "div-menu-font-italic",
+        "div-menu-font-bold",
+        "div-menu-font-delline",
+        "div-menu-font-underline",
+        "div-menu-letter-space",
+        "div-menu-line-height",
+        "div-menu-todo",
+        "div-menu-list",
+        "div-menu-number-list",
+        "div-menu-code",
+        "div-menu-quote"
+      ],
+      "dependencyGraph": {
+        "div-menu": [
+          "div-menu-clear-format",
+          "div-util-divider",
+          "div-menu-insert",
+          "div-menu-font-family",
+          "div-menu-font-size",
+          "div-menu-font-color",
+          "div-menu-font-background",
+          "div-menu-font-italic",
+          "div-menu-font-bold",
+          "div-menu-font-delline",
+          "div-menu-font-underline",
+          "div-menu-letter-space",
+          "div-menu-line-height",
+          "div-menu-todo",
+          "div-menu-list",
+          "div-menu-number-list",
+          "div-menu-code",
+          "div-menu-quote"
+        ],
+        "div-menu-insert": [
+          "div-menu-image",
+          "div-menu-table"
+        ],
+        "div-editor": [
+          "div-menu"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/menu/alignment/index.tsx",
+      "encapsulation": "shadow",
+      "tag": "div-menu-alignment",
+      "readme": "# div-menu-alignment\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "editor",
+          "type": "Editor",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "Editor"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/div-menu-bar/index.tsx",
+      "encapsulation": "shadow",
+      "tag": "div-menu-bar",
+      "readme": "# div-menu-bar\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "editor",
+          "type": "Editor",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "Editor"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [
+        "div-menu-font-family",
+        "div-menu-font-size"
+      ],
+      "dependencyGraph": {
+        "div-menu-bar": [
+          "div-menu-font-family",
+          "div-menu-font-size"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/menu/clear-format/index.tsx",
+      "encapsulation": "shadow",
+      "tag": "div-menu-clear-format",
+      "readme": "# div-menu-clear-format\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "editor",
+          "type": "Editor",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "Editor"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "div-menu"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "div-menu": [
+          "div-menu-clear-format"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/menu/code/index.tsx",
+      "encapsulation": "shadow",
+      "tag": "div-menu-code",
+      "readme": "# div-menu-code\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "editor",
+          "type": "Editor",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "Editor"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "div-menu"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "div-menu": [
+          "div-menu-code"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/menu/font-background/index.tsx",
+      "encapsulation": "shadow",
+      "tag": "div-menu-font-background",
+      "readme": "# div-menu-font-background\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "editor",
+          "type": "Editor",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "Editor"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "div-menu"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "div-menu": [
+          "div-menu-font-background"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/menu/font-bold/index.tsx",
+      "encapsulation": "shadow",
+      "tag": "div-menu-font-bold",
+      "readme": "# div-menu-font-bold\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "editor",
+          "type": "Editor",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "Editor"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "div-menu"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "div-menu": [
+          "div-menu-font-bold"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/menu/font-color/index.tsx",
+      "encapsulation": "shadow",
+      "tag": "div-menu-font-color",
+      "readme": "# div-menu-font-color\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "editor",
+          "type": "Editor",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "Editor"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "div-menu"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "div-menu": [
+          "div-menu-font-color"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/menu/font-delline/index.tsx",
+      "encapsulation": "shadow",
+      "tag": "div-menu-font-delline",
+      "readme": "# div-menu-font-delline\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "editor",
+          "type": "Editor",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "Editor"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "div-menu"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "div-menu": [
+          "div-menu-font-delline"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/menu/font-family/index.tsx",
+      "encapsulation": "shadow",
+      "tag": "div-menu-font-family",
+      "readme": "# font-family\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "editor",
+          "type": "Editor",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "Editor"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "div-menu",
+        "div-menu-bar"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "div-menu": [
+          "div-menu-font-family"
+        ],
+        "div-menu-bar": [
+          "div-menu-font-family"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/menu/font-italic/index.tsx",
+      "encapsulation": "shadow",
+      "tag": "div-menu-font-italic",
+      "readme": "# div-menu-font-italic\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "editor",
+          "type": "Editor",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "Editor"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "div-menu"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "div-menu": [
+          "div-menu-font-italic"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/menu/font-size/index.tsx",
+      "encapsulation": "shadow",
+      "tag": "div-menu-font-size",
+      "readme": "# div-menu-font-size\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "editor",
+          "type": "Editor",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "Editor"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "div-menu",
+        "div-menu-bar"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "div-menu": [
+          "div-menu-font-size"
+        ],
+        "div-menu-bar": [
+          "div-menu-font-size"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/menu/font-underline/index.tsx",
+      "encapsulation": "shadow",
+      "tag": "div-menu-font-underline",
+      "readme": "# div-menu-font-underline\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "editor",
+          "type": "Editor",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "Editor"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "div-menu"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "div-menu": [
+          "div-menu-font-underline"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/menu/format-brush/index.tsx",
+      "encapsulation": "shadow",
+      "tag": "div-menu-format-brush",
+      "readme": "# div-menu-format-brush\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "editor",
+          "type": "Editor",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "Editor"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/menu/image/index.tsx",
+      "encapsulation": "shadow",
+      "tag": "div-menu-image",
+      "readme": "# div-menu-image\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "editor",
+          "type": "Editor",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "Editor"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "div-menu-insert"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "div-menu-insert": [
+          "div-menu-image"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/menu/insert/index.tsx",
+      "encapsulation": "shadow",
+      "tag": "div-menu-insert",
+      "readme": "# div-menu-insert\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "editor",
+          "type": "Editor",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "Editor"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "div-menu"
+      ],
+      "dependencies": [
+        "div-menu-image",
+        "div-menu-table"
+      ],
+      "dependencyGraph": {
+        "div-menu-insert": [
+          "div-menu-image",
+          "div-menu-table"
+        ],
+        "div-menu": [
+          "div-menu-insert"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/menu/letter-space/index.tsx",
+      "encapsulation": "shadow",
+      "tag": "div-menu-letter-space",
+      "readme": "# div-menu-letter-space\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "editor",
+          "type": "Editor",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "Editor"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "div-menu"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "div-menu": [
+          "div-menu-letter-space"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/menu/line-height/index.tsx",
+      "encapsulation": "shadow",
+      "tag": "div-menu-line-height",
+      "readme": "# div-menu-line-height\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "editor",
+          "type": "Editor",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "Editor"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "div-menu"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "div-menu": [
+          "div-menu-line-height"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/menu/list/index.tsx",
+      "encapsulation": "shadow",
+      "tag": "div-menu-list",
+      "readme": "# div-menu-list\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "editor",
+          "type": "Editor",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "Editor"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "div-menu"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "div-menu": [
+          "div-menu-list"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/menu/number-list/index.tsx",
+      "encapsulation": "shadow",
+      "tag": "div-menu-number-list",
+      "readme": "# div-menu-number-list\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "editor",
+          "type": "Editor",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "Editor"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "div-menu"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "div-menu": [
+          "div-menu-number-list"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/menu/quote/index.tsx",
+      "encapsulation": "shadow",
+      "tag": "div-menu-quote",
+      "readme": "# div-menu-quote\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "editor",
+          "type": "Editor",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "Editor"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "div-menu"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "div-menu": [
+          "div-menu-quote"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/menu/table/index.tsx",
+      "encapsulation": "shadow",
+      "tag": "div-menu-table",
+      "readme": "# div-menu-table\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "editor",
+          "type": "Editor",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "Editor"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "div-menu-insert"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "div-menu-insert": [
+          "div-menu-table"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/menu/todo/index.tsx",
+      "encapsulation": "shadow",
+      "tag": "div-menu-todo",
+      "readme": "# div-menu-todo\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "editor",
+          "type": "Editor",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "Editor"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "div-menu"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "div-menu": [
+          "div-menu-todo"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/div-tiptap/index.tsx",
+      "encapsulation": "none",
+      "tag": "div-tiptap",
+      "readme": "# div-tiptap\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "extensions",
+          "type": "any[]",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "[]",
+          "values": [
+            {
+              "type": "any[]"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "height",
+          "type": "string",
+          "mutable": false,
+          "attr": "height",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [
+        {
+          "event": "editorInit",
+          "detail": "Editor",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "",
+          "docsTags": []
+        }
+      ],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "div-editor"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "div-editor": [
+          "div-tiptap"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/util-component/divider/index.tsx",
+      "encapsulation": "shadow",
+      "tag": "div-util-divider",
+      "readme": "# divider\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "div-menu"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "div-menu": [
+          "div-util-divider"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/my-component/my-component.tsx",
+      "encapsulation": "shadow",
+      "tag": "my-component",
+      "readme": "# my-component\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "first",
+          "type": "string",
+          "mutable": false,
+          "attr": "first",
+          "reflectToAttr": false,
+          "docs": "The first name",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "last",
+          "type": "string",
+          "mutable": false,
+          "attr": "last",
+          "reflectToAttr": false,
+          "docs": "The last name",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "middle",
+          "type": "string",
+          "mutable": false,
+          "attr": "middle",
+          "reflectToAttr": false,
+          "docs": "The middle name",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    }
+  ]
+}

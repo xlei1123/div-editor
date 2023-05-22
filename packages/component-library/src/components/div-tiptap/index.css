@@ -1,0 +1,96 @@
+/* 基本编辑器样式 */
+.divTiptap {
+  text-align: left;
+}
+
+.divTiptap .ProseMirror:focus {
+  outline: none;
+}
+
+.divTiptap .ProseMirror {
+  height: 100%
+}
+
+.divTiptap .ProseMirror ul,
+.divTiptap .ProseMirror ol {
+  padding: 0 10px;
+}
+
+.divTiptap .ProseMirror h1,
+.divTiptap .ProseMirror h2,
+.divTiptap .ProseMirror h3,
+.divTiptap .ProseMirror h4,
+.divTiptap .ProseMirror h5,
+.divTiptap .ProseMirror h6 {
+  line-height: 1.1;
+}
+
+.divTiptap .ProseMirror p {
+  margin: 0;
+}
+
+.divTiptap .ProseMirror code {
+  color: #fff;
+  background: #282c34;
+}
+
+.divTiptap .ProseMirror pre {
+  background: #282c34;
+  color: #fff;
+  font-family: 'JetBrainsMono', monospace;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+
+.divTiptap .ProseMirror pre code {
+  color: inherit;
+  padding: 0;
+  font-size: 12px;
+}
+
+.ProseMirror mark {
+  background-color: #faf594;
+}
+
+.ProseMirror img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ProseMirror hr {
+  margin: 10px 0;
+}
+
+.ProseMirror blockquote {
+  margin: 0;
+  padding-left: 10px;
+  border-left: 3px solid #ccc;
+  color: #999;
+}
+
+.divTiptap .ProseMirror hr {
+  border: none;
+  border-top: 2px solid #0d0d0d;
+  margin: 20px 0;
+}
+
+.divTiptap .ProseMirror ul[data-type='taskList'] {
+  list-style: none;
+  padding: 0;
+
+}
+
+.divTiptap .ProseMirror ul[data-type='taskList'] li {
+  display: flex;
+  align-items: center;
+}
+
+.divTiptap .ProseMirror ul[data-type='taskList'] li>label {
+  flex: 0 0 auto;
+  margin-right: 5px;
+  user-select: none;
+}
+
+.divTiptap .ProseMirror ul[data-type='taskList'] li>div {
+  flex: 1 1 auto;
+}

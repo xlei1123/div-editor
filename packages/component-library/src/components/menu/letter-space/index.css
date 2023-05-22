@@ -1,0 +1,34 @@
+.menu-item {
+  position: relative;
+  padding: 0px;
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: transparent;
+  text-align: center;
+  vertical-align: inherit;
+}
+.menu-item svg {
+  fill: currentColor;
+  height: 100%;
+  width: 100%;
+}
+.letterSpacing {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  top: 30px;
+  width: 180px;
+}
+.letterSpacingInput {
+  display: inline-block;
+  width: 100px;
+  border-radius: 4px;
+}
+.confirm {
+  margin-left: 10px;
+  cursor: pointer;
+}
