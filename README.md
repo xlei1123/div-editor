@@ -1,6 +1,6 @@
 [English](./README.md) | [简体中文](./README.zh-CN.md)
 
-a web Component editor! You can use it like using HTML native tags。
+A web Component editor! You can use it like using HTML native tags。
 
 <div align="center">
 <a href="https://github.com/xlei1123/div-editor/pulls" target="_blank"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs"/></a>
