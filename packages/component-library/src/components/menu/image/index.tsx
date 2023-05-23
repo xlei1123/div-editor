@@ -9,15 +9,25 @@ import remixiconUrl from 'remixicon/fonts/remixicon.symbol.svg';
 })
 export class DivMenuImage {
   @Prop() editor: Editor
-  insertImage = () => {
-    
+  insertImage = (e) => {
+    let files = [...e.target.files];
+    files.forEach(async (file: File) => {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onloadend = (e) => {
+        debugger;
+        this.editor.commands.setImage({
+          src: e.target.result as any
+        })
+      }
+    });
   }
   render() {
     return  <span
       class={`is-active menu-item`}
       title="插入图片"
-      onClick={this.insertImage}
     >
+      <input type="file" class={'input-file'} onChange={this.insertImage} />
       <svg class="remix">
         <use xlinkHref={`${remixiconUrl}#ri-image-line`} />
       </svg>

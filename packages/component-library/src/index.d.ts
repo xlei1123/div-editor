@@ -14,6 +14,8 @@ import ListItem from '@tiptap/extension-list-item';
 import BulletList from '@tiptap/extension-bullet-list';
 import TaskList from '@tiptap/extension-task-list';
 import OrderedList from '@tiptap/extension-ordered-list';
+import Image from '@tiptap/extension-image';
+
 export {
   Highlight,
   TextStyle,
@@ -30,6 +32,7 @@ export {
   ListItem,
   BulletList,
   TaskList,
-  OrderedList
+  OrderedList,
+  Image
 }
 export * from './components';

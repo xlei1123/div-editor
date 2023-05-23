@@ -61,7 +61,7 @@ importers:
     specifiers:
       '@stencil/core': ^3.2.2
       '@stencil/react-output-target': 0.0.1
-      '@stencil/vue-output-target': 0.8.4
+      '@stencil/vue-output-target': 0.8.5
       '@tiptap/core': ^2.0.1
       '@tiptap/extension-blockquote': ^2.0.3
       '@tiptap/extension-bullet-list': ^2.0.3
@@ -69,6 +69,7 @@ importers:
       '@tiptap/extension-color': ^2.0.3
       '@tiptap/extension-font-family': ^2.0.2
       '@tiptap/extension-highlight': ^2.0.3
+      '@tiptap/extension-image': ^2.0.3
       '@tiptap/extension-list-item': ^2.0.3
       '@tiptap/extension-ordered-list': ^2.0.3
       '@tiptap/extension-task-item': ^2.0.3
@@ -83,7 +84,7 @@ importers:
     dependencies:
       '@stencil/core': 3.2.2
       '@stencil/react-output-target': 0.0.1
-      '@stencil/vue-output-target': 0.8.4_@stencil+core@3.2.2
+      '@stencil/vue-output-target': 0.8.5_@stencil+core@3.2.2
       '@tiptap/core': 2.0.3_@tiptap+pm@2.0.3
       '@tiptap/extension-blockquote': 2.0.3_@tiptap+core@2.0.3
       '@tiptap/extension-bullet-list': 2.0.3_@tiptap+core@2.0.3
@@ -91,6 +92,7 @@ importers:
       '@tiptap/extension-color': 2.0.3_yvcui447lws44fuh5cet63uozq
       '@tiptap/extension-font-family': 2.0.3_yvcui447lws44fuh5cet63uozq
       '@tiptap/extension-highlight': 2.0.3_@tiptap+core@2.0.3
+      '@tiptap/extension-image': 2.0.3_@tiptap+core@2.0.3
       '@tiptap/extension-list-item': 2.0.3_@tiptap+core@2.0.3
       '@tiptap/extension-ordered-list': 2.0.3_@tiptap+core@2.0.3
       '@tiptap/extension-task-item': 2.0.3_7qxxgdyo6i4mk7xrbxa2xtsga4
@@ -2244,8 +2246,8 @@ packages:
     resolution: {integrity: sha512-LRGafNL3qkjMsqfVIG5K+KtmrndHv9CtxK2TpV13yDAYHtntAPeJvMx8McHOjCI4CtLoKIE3TFq3k30Y4hIovw==}
     dev: false
 
-  /@stencil/vue-output-target/0.8.4_@stencil+core@3.2.2:
-    resolution: {integrity: sha512-3iESCce7D/2lNVYGM+ukwW/NLFAfeAOcaMFXaK0R1Ub0mZ2YwL9N1rxr9Y8UGfdUzkpi66XIo0jNm3V9YlZ+Ig==}
+  /@stencil/vue-output-target/0.8.5_@stencil+core@3.2.2:
+    resolution: {integrity: sha512-AOse8WGzdH3lYhw+yQ/MYvobcaSOFd7B/xQ+oWv3GZLZpCw5fw+eOfFv1734mdA/Jjx+kWADlgsZ4w+cmiR+ZQ==}
     peerDependencies:
       '@stencil/core': ^2.9.0 || ^3.0.0
     dependencies:
@@ -2529,6 +2531,14 @@ packages:
     dependencies:
       '@tiptap/core': 2.0.3_@tiptap+pm@2.0.3
       '@tiptap/pm': 2.0.3_@tiptap+core@2.0.3
+    dev: false
+
+  /@tiptap/extension-image/2.0.3_@tiptap+core@2.0.3:
+    resolution: {integrity: sha512-hS9ZJwz0md07EHsC+o4NuuJkhCZsZn7TuRz/2CvRSj2fWFIz+40CyNAHf/2J0qNugG9ommXaemetsADeEZP9ag==}
+    peerDependencies:
+      '@tiptap/core': ^2.0.0
+    dependencies:
+      '@tiptap/core': 2.0.3_@tiptap+pm@2.0.3
     dev: false
 
   /@tiptap/extension-italic/2.0.3_@tiptap+core@2.0.3:

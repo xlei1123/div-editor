@@ -34,8 +34,8 @@ export class DivMenuInsert {
       </div>
       {
         this.subMenuShow ? <div class="list">
-        <div-menu-image class="item"></div-menu-image>
-        <div-menu-table class="item"></div-menu-table>
+        <div-menu-image class="item" editor={this.editor}></div-menu-image>
+        <div-menu-table class="item" editor={this.editor}></div-menu-table>
       </div> : null
       }
     </div>

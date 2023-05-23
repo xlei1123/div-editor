@@ -53,8 +53,12 @@ const insertOptionSetup = () => {
 </script>
 
 <template>
-  <div-editor @editorInit="onEditorInit" .editorExtensions="_extensions" />
-  <button @click="insert">插入选项式组件</button>
-  <button @click="insertOptionSetup">插入选项式setup组件</button>
-  <button @click="insertComposition">插入Composition组件</button>
+  <div>
+    <div>
+      <button @click="insert">插入选项式组件</button>
+      <button @click="insertOptionSetup">插入选项式setup组件</button>
+      <button @click="insertComposition">插入Composition组件</button>
+    </div>
+    <div-editor @editorInit="onEditorInit" .editorExtensions="_extensions" />
+  </div>
 </template>
