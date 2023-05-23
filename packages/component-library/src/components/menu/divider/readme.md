@@ -21,8 +21,8 @@
 ### Graph
 ```mermaid
 graph TD;
-  div-menu-insert --> div-menu-table
-  style div-menu-table fill:#f9f,stroke:#333,stroke-width:4px
+  div-menu-insert --> div-menu-divider
+  style div-menu-divider fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

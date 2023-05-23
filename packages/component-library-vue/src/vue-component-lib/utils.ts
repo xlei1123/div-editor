@@ -1,3 +1,5 @@
+// @ts-nocheck
+// It's easier and safer for Volar to disable typechecking and let the return type inference do its job.
 import { VNode, defineComponent, getCurrentInstance, h, inject, ref, Ref } from 'vue';
 
 export interface InputProps<T> {
@@ -72,7 +74,7 @@ export const defineContainer = <Props, VModelType = string | number | boolean>(
     defineCustomElement();
   }
 
-  const Container = defineComponent<Props & InputProps<VModelType>>((props: any, { attrs, slots, emit }) => {
+  const Container = defineComponent<Props & InputProps<VModelType>>((props, { attrs, slots, emit }) => {
     let modelPropValue = props[modelProp];
     const containerRef = ref<HTMLElement>();
     const classes = new Set(getComponentClasses(attrs.class));
@@ -183,23 +185,22 @@ export const defineContainer = <Props, VModelType = string | number | boolean>(
       return h(name, propsToAdd, slots.default && slots.default());
     };
   });
-  // @ts-ignore
-  Container.name = name;
-  // @ts-ignore
-  Container.props = {
-    [ROUTER_LINK_VALUE]: DEFAULT_EMPTY_PROP,
-  };
 
-  componentProps.forEach((componentProp) => {
-    // @ts-ignore
-    Container.props[componentProp] = DEFAULT_EMPTY_PROP;
-  });
+  if (typeof Container !== 'function') {
+    Container.name = name;
 
-  if (modelProp) {
-    // @ts-ignore
-    Container.props[MODEL_VALUE] = DEFAULT_EMPTY_PROP;
-    // @ts-ignore
-    Container.emits = [UPDATE_VALUE_EVENT, externalModelUpdateEvent];
+    Container.props = {
+      [ROUTER_LINK_VALUE]: DEFAULT_EMPTY_PROP,
+    };
+
+    componentProps.forEach((componentProp) => {
+      Container.props[componentProp] = DEFAULT_EMPTY_PROP;
+    });
+
+    if (modelProp) {
+      Container.props[MODEL_VALUE] = DEFAULT_EMPTY_PROP;
+      Container.emits = [UPDATE_VALUE_EVENT, externalModelUpdateEvent];
+    }
   }
 
   return Container;

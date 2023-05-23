@@ -1,5 +1,5 @@
 {
-  "timestamp": "2023-05-23T05:31:56",
+  "timestamp": "2023-05-23T10:00:10",
   "compiler": {
     "name": "@stencil/core",
     "version": "3.2.2",
@@ -80,7 +80,7 @@
         ],
         "div-menu-insert": [
           "div-menu-image",
-          "div-menu-table"
+          "div-menu-divider"
         ]
       }
     },
@@ -161,7 +161,7 @@
         ],
         "div-menu-insert": [
           "div-menu-image",
-          "div-menu-table"
+          "div-menu-divider"
         ],
         "div-editor": [
           "div-menu"
@@ -325,6 +325,47 @@
       "dependencyGraph": {
         "div-menu": [
           "div-menu-code"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/menu/divider/index.tsx",
+      "encapsulation": "shadow",
+      "tag": "div-menu-divider",
+      "readme": "# div-menu-table\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "editor",
+          "type": "Editor",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "Editor"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "div-menu-insert"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "div-menu-insert": [
+          "div-menu-divider"
         ]
       }
     },
@@ -776,12 +817,12 @@
       ],
       "dependencies": [
         "div-menu-image",
-        "div-menu-table"
+        "div-menu-divider"
       ],
       "dependencyGraph": {
         "div-menu-insert": [
           "div-menu-image",
-          "div-menu-table"
+          "div-menu-divider"
         ],
         "div-menu": [
           "div-menu-insert"
@@ -1024,15 +1065,9 @@
       "styles": [],
       "slots": [],
       "parts": [],
-      "dependents": [
-        "div-menu-insert"
-      ],
+      "dependents": [],
       "dependencies": [],
-      "dependencyGraph": {
-        "div-menu-insert": [
-          "div-menu-table"
-        ]
-      }
+      "dependencyGraph": {}
     },
     {
       "filePath": "./src/components/menu/todo/index.tsx",

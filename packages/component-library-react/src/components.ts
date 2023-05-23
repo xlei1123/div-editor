@@ -4,7 +4,7 @@ import { createReactComponent } from './react-component-lib';
 
 import { JSX } from 'component-library';
 
-import { defineCustomElements, applyPolyfills } from 'component-library/loader';
+import { defineCustomElements, applyPolyfills } from 'component-library\loader';
 
 applyPolyfills().then(() => { defineCustomElements(window); });
 export const DivEditor = createReactComponent<JSX.DivEditor, HTMLDivEditorElement>('div-editor');
@@ -13,6 +13,7 @@ export const DivMenuAlignment = createReactComponent<JSX.DivMenuAlignment, HTMLD
 export const DivMenuBar = createReactComponent<JSX.DivMenuBar, HTMLDivMenuBarElement>('div-menu-bar');
 export const DivMenuClearFormat = createReactComponent<JSX.DivMenuClearFormat, HTMLDivMenuClearFormatElement>('div-menu-clear-format');
 export const DivMenuCode = createReactComponent<JSX.DivMenuCode, HTMLDivMenuCodeElement>('div-menu-code');
+export const DivMenuDivider = createReactComponent<JSX.DivMenuDivider, HTMLDivMenuDividerElement>('div-menu-divider');
 export const DivMenuFontBackground = createReactComponent<JSX.DivMenuFontBackground, HTMLDivMenuFontBackgroundElement>('div-menu-font-background');
 export const DivMenuFontBold = createReactComponent<JSX.DivMenuFontBold, HTMLDivMenuFontBoldElement>('div-menu-font-bold');
 export const DivMenuFontColor = createReactComponent<JSX.DivMenuFontColor, HTMLDivMenuFontColorElement>('div-menu-font-color');

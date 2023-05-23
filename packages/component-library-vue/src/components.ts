@@ -39,6 +39,11 @@ export const DivMenuCode = /*@__PURE__*/ defineContainer<JSX.DivMenuCode>('div-m
 ]);
 
 
+export const DivMenuDivider = /*@__PURE__*/ defineContainer<JSX.DivMenuDivider>('div-menu-divider', undefined, [
+  'editor'
+]);
+
+
 export const DivMenuFontBackground = /*@__PURE__*/ defineContainer<JSX.DivMenuFontBackground>('div-menu-font-background', undefined, [
   'editor'
 ]);

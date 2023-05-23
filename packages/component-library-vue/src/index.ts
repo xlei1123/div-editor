@@ -34,7 +34,6 @@ export const toExtention = (node: VueNode, h: Function, render: Function) => Nod
   addNodeView() {
     // editor, node, getPos, HTMLAttributes, decorations, extension
     return ({HTMLAttributes}) => {
-      console.log('HTMLAttributes===>', HTMLAttributes);
       let dom = document.createElement('div');
       dom.className = node.name;
       // @ts-ignore

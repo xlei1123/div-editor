@@ -61,7 +61,7 @@ graph TD;
   div-menu --> div-menu-code
   div-menu --> div-menu-quote
   div-menu-insert --> div-menu-image
-  div-menu-insert --> div-menu-table
+  div-menu-insert --> div-menu-divider
   div-editor --> div-menu
   style div-menu fill:#f9f,stroke:#333,stroke-width:4px
 ```

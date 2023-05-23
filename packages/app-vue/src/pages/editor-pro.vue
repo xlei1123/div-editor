@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { toExtention } from 'component-library-vue';
 import type { Editor } from 'component-library';
-import Component from './Component.vue';
-import ComponentSetup from './Component-setup.vue';
-import Composition from './Composition.vue';
+import Component from '../components/Component.vue';
+import ComponentSetup from '../components/Component-setup.vue';
+import Composition from '../components/Composition.vue';
 import { h, render, ref } from 'vue';
 
 const vueCustomExtensions = [

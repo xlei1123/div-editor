@@ -39,7 +39,7 @@ export const Divider = Node.create({
 
   addNodeView() {
     // editor, node, getPos, HTMLAttributes, decorations, extension
-    return ({HTMLAttributes}) => {
+    return ({}) => {
       let dom = document.createElement('div');
       dom.setAttribute('style', 'border-bottom: 1px solid #ccc; width: 100%');
       return {

@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import Editor from './components/Editor.vue';
+ 
 </script>
 
 <template>
-  <Editor />
+   <router-view></router-view>
 </template>
 
 <style scoped>

@@ -9,9 +9,10 @@
     "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
-    "component-library-vue": "^0.0.1",
     "component-library": "0.0.1",
-    "vue": "^3.2.37"
+    "component-library-vue": "^0.0.1",
+    "vue": "^3.2.37",
+    "vue-router": "^4.2.1"
   },
   "devDependencies": {
     "@types/node": "^16.11.47",
