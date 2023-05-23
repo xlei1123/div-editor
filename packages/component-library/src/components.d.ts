@@ -26,6 +26,9 @@ export namespace Components {
     interface DivMenuCode {
         "editor": Editor;
     }
+    interface DivMenuDivider {
+        "editor": Editor;
+    }
     interface DivMenuFontBackground {
         "editor": Editor;
     }
@@ -145,6 +148,12 @@ declare global {
     var HTMLDivMenuCodeElement: {
         prototype: HTMLDivMenuCodeElement;
         new (): HTMLDivMenuCodeElement;
+    };
+    interface HTMLDivMenuDividerElement extends Components.DivMenuDivider, HTMLStencilElement {
+    }
+    var HTMLDivMenuDividerElement: {
+        prototype: HTMLDivMenuDividerElement;
+        new (): HTMLDivMenuDividerElement;
     };
     interface HTMLDivMenuFontBackgroundElement extends Components.DivMenuFontBackground, HTMLStencilElement {
     }
@@ -279,6 +288,7 @@ declare global {
         "div-menu-bar": HTMLDivMenuBarElement;
         "div-menu-clear-format": HTMLDivMenuClearFormatElement;
         "div-menu-code": HTMLDivMenuCodeElement;
+        "div-menu-divider": HTMLDivMenuDividerElement;
         "div-menu-font-background": HTMLDivMenuFontBackgroundElement;
         "div-menu-font-bold": HTMLDivMenuFontBoldElement;
         "div-menu-font-color": HTMLDivMenuFontColorElement;
@@ -320,6 +330,9 @@ declare namespace LocalJSX {
         "editor"?: Editor;
     }
     interface DivMenuCode {
+        "editor"?: Editor;
+    }
+    interface DivMenuDivider {
         "editor"?: Editor;
     }
     interface DivMenuFontBackground {
@@ -404,6 +417,7 @@ declare namespace LocalJSX {
         "div-menu-bar": DivMenuBar;
         "div-menu-clear-format": DivMenuClearFormat;
         "div-menu-code": DivMenuCode;
+        "div-menu-divider": DivMenuDivider;
         "div-menu-font-background": DivMenuFontBackground;
         "div-menu-font-bold": DivMenuFontBold;
         "div-menu-font-color": DivMenuFontColor;
@@ -437,6 +451,7 @@ declare module "@stencil/core" {
             "div-menu-bar": LocalJSX.DivMenuBar & JSXBase.HTMLAttributes<HTMLDivMenuBarElement>;
             "div-menu-clear-format": LocalJSX.DivMenuClearFormat & JSXBase.HTMLAttributes<HTMLDivMenuClearFormatElement>;
             "div-menu-code": LocalJSX.DivMenuCode & JSXBase.HTMLAttributes<HTMLDivMenuCodeElement>;
+            "div-menu-divider": LocalJSX.DivMenuDivider & JSXBase.HTMLAttributes<HTMLDivMenuDividerElement>;
             "div-menu-font-background": LocalJSX.DivMenuFontBackground & JSXBase.HTMLAttributes<HTMLDivMenuFontBackgroundElement>;
             "div-menu-font-bold": LocalJSX.DivMenuFontBold & JSXBase.HTMLAttributes<HTMLDivMenuFontBoldElement>;
             "div-menu-font-color": LocalJSX.DivMenuFontColor & JSXBase.HTMLAttributes<HTMLDivMenuFontColorElement>;

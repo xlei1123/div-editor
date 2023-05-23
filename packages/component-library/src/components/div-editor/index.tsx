@@ -11,6 +11,7 @@ import { Background } from '../../extension/background';
 import { TextDecoration } from '../../extension/textDecoration';
 import { LetterSpacing } from '../../extension/letterSpace';
 import { LineHeight } from '../../extension/lineHeight';
+import { Divider } from '../../extension/divider';
 import TaskItem from '@tiptap/extension-task-item';
 import ListItem from '@tiptap/extension-list-item';
 import BulletList from '@tiptap/extension-bullet-list';
@@ -50,6 +51,7 @@ export class DivEditor {
       Image.configure({
         allowBase64: true,
       }),
+      Divider,
     ];
   }
   disconnectedCallback() {
