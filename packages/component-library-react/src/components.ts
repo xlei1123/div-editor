@@ -4,7 +4,7 @@ import { createReactComponent } from './react-component-lib';
 
 import { JSX } from 'component-library';
 
-import { defineCustomElements, applyPolyfills } from 'component-library\loader';
+import { defineCustomElements, applyPolyfills } from 'component-library/loader';
 
 applyPolyfills().then(() => { defineCustomElements(window); });
 export const DivEditor = createReactComponent<JSX.DivEditor, HTMLDivEditorElement>('div-editor');

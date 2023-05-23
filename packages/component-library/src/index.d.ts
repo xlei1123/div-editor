@@ -1,4 +1,3 @@
-export * from './components/index';
 import Highlight from '@tiptap/extension-highlight';
 import TextStyle from '@tiptap/extension-text-style';
 import { Color } from '@tiptap/extension-color';
@@ -33,3 +32,4 @@ export {
   TaskList,
   OrderedList
 }
+export * from './components';

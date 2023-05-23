@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { toExtention, DivEditor } from 'component-library-vue';
+import { toExtention } from 'component-library-vue';
 import type { Editor } from 'component-library';
 import Component from './Component.vue';
 import ComponentSetup from './Component-setup.vue';
@@ -16,19 +16,22 @@ const vueCustomExtensions = [
     component: ComponentSetup,
   },
   {
-    name: 'cus_composition',
+    name: 'vue_composition',
     component: Composition,
   }
 ].map((extension) => {
   return toExtention(extension, h, render)
 });
+const _extensions = [
+  ...vueCustomExtensions,
+ 
+];
 let editor: Editor;
 
 const onEditorInit = (ev: any) => {
   editor = ev.detail;
 }
 
-console.log('vueCustomExte1nsions====>', vueCustomExtensions);
 const insert = () => {
   editor.commands.insertContent({
     type: 'vue_comp',
@@ -38,7 +41,7 @@ const insert = () => {
 
 const insertComposition = () => {
   editor.commands.insertContent({
-    type: 'cus_composition',
+    type: 'vue_composition',
   });
 }
 const insertOptionSetup = () => {
@@ -50,7 +53,7 @@ const insertOptionSetup = () => {
 </script>
 
 <template>
-  <div-editor @editorInit="onEditorInit" .editorExtensions="vueCustomExtensions" />
+  <div-editor @editorInit="onEditorInit" .editorExtensions="_extensions" />
   <button @click="insert">插入选项式组件</button>
   <button @click="insertOptionSetup">插入选项式setup组件</button>
   <button @click="insertComposition">插入Composition组件</button>

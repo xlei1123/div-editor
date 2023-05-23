@@ -1,6 +1,6 @@
 import { mergeAttributes, Node } from '@tiptap/core';
 
-export * from './proxies';
+export * from './components';
 export * from './vue-component-lib/plugin';
 
 export interface VueNode {

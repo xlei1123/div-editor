@@ -21,10 +21,11 @@ export default {
     <h1 class="green">{{ msg }}</h1>
     <h3>
       <p>You’ve successfully created a project with</p>
-      <a target="_blank" href="https://vitejs.dev/">Vite</a> +
+      <a target="_blank" href="https://github.com/xlei1123/div-editor">div-editor</a>
       <a target="_blank" href="https://vuejs.org/">Vue 3</a>.
     </h3>
-    <button @click="change"> {{count}}</button>
+    {{ count }}
+    <button @click="change"> 加1</button>
   </div>
 </template>
 

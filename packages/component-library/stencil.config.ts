@@ -16,7 +16,7 @@ export const config: Config = {
     }),
     vueOutputTarget({
       componentCorePackage: 'component-library',
-      proxiesFile: '../component-library-vue/src/proxies.ts',
+      proxiesFile: '../component-library-vue/src/components.ts',
     }),
     { type: 'docs-readme' },
     { type: 'docs-json', file: './stuff.json' },

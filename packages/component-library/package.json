@@ -3,11 +3,11 @@
   "version": "0.0.1",
   "author": "xlei1123 <983171730@qq.com>",
   "description": "Stencil Component Starter",
-  "module": "dist/index.mjs",
+  "module": "dist/index.js",
   "main": "dist/index.js",
   "unpkg": "dist/ionic.js",
   "private": true,
-  "types": "dist/types/components.d.ts",
+  "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "files": [
     "dist/"
@@ -21,7 +21,7 @@
   "dependencies": {
     "@stencil/core": "^3.2.2",
     "@stencil/react-output-target": "0.0.1",
-    "@stencil/vue-output-target": "0.8.4",
+    "@stencil/vue-output-target": "0.8.5",
     "@tiptap/core": "^2.0.1",
     "@tiptap/extension-blockquote": "^2.0.3",
     "@tiptap/extension-bullet-list": "^2.0.3",
