@@ -9,8 +9,10 @@
     "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.1.0",
     "component-library": "0.0.1",
     "component-library-vue": "^0.0.1",
+    "element-plus": "^2.3.5",
     "vue": "^3.2.37",
     "vue-router": "^4.2.1"
   },

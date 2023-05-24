@@ -1,20 +1,32 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router';
+import Layout from './pages/layout.vue';
 
 const routes = [
   {
     path: '/',
     // 重定向
-    redirect: '/editor-pro',
+    redirect: '/editor/pro',
   },
   {
-    path: '/editor-pro',
-    name: 'editor-pro',
-    component: () => import('./pages/editor-pro.vue'),
-  },
-  {
-    path: '/editor-noheader',
-    name: 'editor-noheader',
-    component: () => import('./pages/editor-noheader.vue'),
+    path: '/editor',
+    name: 'editor',
+    component: Layout,
+    children: [
+      {
+        path: 'pro',
+        name: 'pro',
+        component: function () {
+          return import(/* webpackChunkName: "assets" */ './pages/editor-pro.vue')
+        }
+      },
+      {
+        path: 'noheader',
+        name: 'noheader',
+        component: function () {
+          return import(/* webpackChunkName: "assets" */ './pages/editor-noheader.vue')
+        }
+      },
+    ]
   },
     
 ]
