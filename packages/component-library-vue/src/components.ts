@@ -9,7 +9,7 @@ import type { JSX } from 'component-library';
 
 
 export const DivEditor = /*@__PURE__*/ defineContainer<JSX.DivEditor>('div-editor', undefined, [
-  'editorExtensions',
+  'extensions',
   'editorInit'
 ]);
 

@@ -7,9 +7,9 @@
 
 ## Properties
 
-| Property           | Attribute | Description | Type    | Default |
-| ------------------ | --------- | ----------- | ------- | ------- |
-| `editorExtensions` | --        |             | `any[]` | `[]`    |
+| Property     | Attribute | Description | Type    | Default |
+| ------------ | --------- | ----------- | ------- | ------- |
+| `extensions` | --        |             | `any[]` | `[]`    |
 
 
 ## Events

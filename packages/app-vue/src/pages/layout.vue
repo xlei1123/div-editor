@@ -26,7 +26,7 @@ import { computed, ref } from 'vue';
 import { useRoute } from 'vue-router';
 import {
   Menu as IconMenu,
-  Location,
+  Setting,
 } from '@element-plus/icons-vue';
 
 const route = useRoute();

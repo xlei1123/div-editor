@@ -59,6 +59,6 @@ const insertOptionSetup = () => {
       <button @click="insertOptionSetup">插入选项式setup组件</button>
       <button @click="insertComposition">插入Composition组件</button>
     </div>
-    <div-editor @editorInit="onEditorInit" .editorExtensions="_extensions" />
+    <div-editor @editorInit="onEditorInit" .extensions="_extensions" />
   </div>
 </template>

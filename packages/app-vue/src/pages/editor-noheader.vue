@@ -60,7 +60,7 @@ const insertOptionSetup = () => {
         <button @click="insertOptionSetup">插入选项式setup组件</button>
         <button @click="insertComposition">插入Composition组件</button>
       </div>
-      <div-tiptap @editorInit="onEditorInit" .editorExtensions="_extensions" aria-placeholder="请输入" />
+      <div-tiptap @editorInit="onEditorInit" .extensions="_extensions" aria-placeholder="请输入" />
     </div>
     <div class="des">
       你可以看到左侧是一个无头的编辑器，它不带任何的菜单项，你需要完全自主的编写菜单项，当然编辑器内容的样式你也可以自己去更改，更多请查看...

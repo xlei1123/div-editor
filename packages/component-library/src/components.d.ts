@@ -9,7 +9,7 @@ import { Editor } from "@tiptap/core";
 export { Editor } from "@tiptap/core";
 export namespace Components {
     interface DivEditor {
-        "editorExtensions": any[];
+        "extensions": any[];
     }
     interface DivMenu {
         "editor": Editor;
@@ -314,7 +314,7 @@ declare global {
 }
 declare namespace LocalJSX {
     interface DivEditor {
-        "editorExtensions"?: any[];
+        "extensions"?: any[];
         "onEditorInit"?: (event: DivEditorCustomEvent<Editor>) => void;
     }
     interface DivMenu {

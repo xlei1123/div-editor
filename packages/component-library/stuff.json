@@ -1,5 +1,5 @@
 {
-  "timestamp": "2023-05-23T10:00:10",
+  "timestamp": "2023-05-24T05:19:19",
   "compiler": {
     "name": "@stencil/core",
     "version": "3.2.2",
@@ -16,7 +16,7 @@
       "usage": {},
       "props": [
         {
-          "name": "editorExtensions",
+          "name": "extensions",
           "type": "any[]",
           "mutable": false,
           "reflectToAttr": false,

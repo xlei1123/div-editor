@@ -25,13 +25,13 @@ import Image from '@tiptap/extension-image';
 })
 export class DivEditor {
   @State() editor;
-  @State() extensions: any[] = [];
-  @Prop() editorExtensions: any[]= [];
+  @State() _extensions: any[] = [];
+  @Prop() extensions: any[]= [];
   @Event() editorInit: EventEmitter<Editor>
   componentDidRender() {}
   connectedCallback() {
-    this.extensions = [
-      ...this.editorExtensions,
+    this._extensions = [
+      ...this.extensions,
       Highlight,
       TextStyle,
       Color,
@@ -65,7 +65,7 @@ export class DivEditor {
     return <div>
       <div-menu editor={this.editor} class="div-menu"></div-menu>
       <div class="editorContent">
-        <div-tiptap onEditorInit={this.onEditorInit} extensions={this.extensions}></div-tiptap>
+        <div-tiptap onEditorInit={this.onEditorInit} extensions={this._extensions}></div-tiptap>
       </div>
     </div>
   }

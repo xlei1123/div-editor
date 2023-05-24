@@ -57,7 +57,7 @@ class App extends Component<{}, State> {
     return (
       <div className="App">
         <header className="App-header">
-          <DivEditor onEditorInit={this.onEditorInit} editorExtensions={customExtensions} children={undefined} className={undefined}/>
+          <DivEditor onEditorInit={this.onEditorInit} extensions={customExtensions} children={undefined} className={undefined}/>
 
           {this.state.value ? <p>Value is {this.state.value}</p> : null}
           <button onClick={this.insertCom}>插入class组件</button>
