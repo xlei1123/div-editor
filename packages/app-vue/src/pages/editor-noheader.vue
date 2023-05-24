@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { toExtention } from 'component-library-vue';
 import type { Editor } from 'component-library';
+import { FontSize } from 'component-library';
 import Component from '../components/Component.vue';
 import ComponentSetup from '../components/Component-setup.vue';
 import Composition from '../components/Composition.vue';
@@ -24,12 +25,14 @@ const vueCustomExtensions = [
 });
 const _extensions = [
   ...vueCustomExtensions,
- 
+  FontSize
 ];
 let editor: Editor;
-
+const editorInited = ref(false);
 const onEditorInit = (ev: any) => {
+  console.log('editor===>', ev.detail)
   editor = ev.detail;
+  editorInited.value = true;
 }
 
 const insert = () => {
@@ -60,6 +63,11 @@ const insertOptionSetup = () => {
         <button @click="insertOptionSetup">插入选项式setup组件</button>
         <button @click="insertComposition">插入Composition组件</button>
       </div>
+      <div class="menuBar" v-if="editorInited">
+        <div-menu-font-size .editor="editor" class="menuItem" />
+        <div-menu-font-italic .editor="editor" class="menuItem" />
+        <div-menu-font-bold .editor="editor" class="menuItem" />
+      </div>
       <div-tiptap @editorInit="onEditorInit" .extensions="_extensions" aria-placeholder="请输入" />
     </div>
     <div class="des">
@@ -84,5 +92,8 @@ div-tiptap {
 }
 .des {
   width: 400px;
+}
+.menuBar {
+  display: flex;
 }
 </style>
