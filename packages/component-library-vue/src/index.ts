@@ -27,13 +27,13 @@ export const toExtention = (node: VueNode, h: Function, render: Function) => Nod
     ]
   },
 
-  renderHTML({ HTMLAttributes }) {
+  renderHTML({ HTMLAttributes }: any) {
     return [node.tag || node.name, mergeAttributes(HTMLAttributes)]
   },
 
   addNodeView() {
     // editor, node, getPos, HTMLAttributes, decorations, extension
-    return ({HTMLAttributes}) => {
+    return ({HTMLAttributes}: any) => {
       let dom = document.createElement('div');
       dom.className = node.name;
       // @ts-ignore

@@ -18,8 +18,10 @@ export const config: Config = {
       componentCorePackage: 'component-library',
       proxiesFile: '../component-library-vue/src/components.ts',
     }),
-    { type: 'docs-readme' },
-    { type: 'docs-json', file: './stuff.json' },
+    { 
+      type: 'docs-readme',
+      footer: '*Built with love!*',
+    },
     {
       type: 'www',
       serviceWorker: null // disable service workers

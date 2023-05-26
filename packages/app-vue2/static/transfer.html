@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>榜上有名查分系统,快速查分,非常好用的查分系统，免费查分软件，查分App</title>
+    <meta name="keywords" content="榜上有名查分系统,快速查分,比较好的查分系统，比较方便的查分,多少分,最快只需一步,快速查分,简单方便的查分,建立自己的查分系统,云查分">
+    <meta name="description" content="榜上有名查分系统,快速查分,比较好的查分系统，比较方便的查分,多少分,最快只需一步,快速查分,简单方便的查分,建立自己的查分系统,云查分">
+    <script>
+        (function(){
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+        </script>
+    <script src="./static/js/jquery-1.7.2.js"></script>
+</head>
+<body>
+    <script>
+        var toLinkStr = location.search.substr(1).split('&')[0].split('=')[1];
+        var code = location.search.substr(1).split('&')[1].split('=')[1];
+        // 成绩查询
+        $.ajax({
+            type:'POST',
+            url:'http://60.205.213.247:3000/api/getStudentInfo',
+            data:{
+                code:code
+            },
+            success:function(result){
+                console.log(result)
+                if(result.isOk==true){
+                    
+                    sessionStorage.teacherInfo = JSON.stringify(result.msg);
+                    
+                    // var strLink = `http://www.shanshuijituan.site/#/${toLinkStr}?teacherCode=${result.msg.teacherCode}`
+                    // var strLink = 'http://www.shanshuijituan.site/#/'+toLinkStr+'?teacherCode='+result.msg.teacherCode+'&role=1'
+                    location.replace('http://www.shanshuijituan.site/'+toLinkStr+'?teacherCode='+result.msg.teacherCode+'&role=1')
+                }else{
+                    result.teacherCode = '00000'   //空的 没有指定的
+                    sessionStorage.openId = result.msg.openid;
+                    sessionStorage.toLinkStr = toLinkStr;
+                    location.href = 'http://www.shanshuijituan.site/enterQueryCode?role=1'
+
+                }
+            }
+        })
+    </script>
+</body>
+</html>
