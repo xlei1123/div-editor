@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { toExtention } from 'component-library-vue';
-import type { Editor } from 'component-library';
+import { toExtention } from 'div-editor-vue';
+import type { Editor } from 'div-editor';
 import Component from '../components/Component.vue';
 import ComponentSetup from '../components/Component-setup.vue';
 import Composition from '../components/Composition.vue';

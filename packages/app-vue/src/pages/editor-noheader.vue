@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { toExtention } from 'component-library-vue';
-import type { Editor } from 'component-library';
-import { FontSize } from 'component-library';
+import { toExtention } from 'div-editor-vue';
+import type { Editor } from 'div-editor';
+import { FontSize } from 'div-editor';
 import Component from '../components/Component.vue';
 import ComponentSetup from '../components/Component-setup.vue';
 import Composition from '../components/Composition.vue';
@@ -30,7 +30,6 @@ const _extensions = [
 let editor: Editor;
 const editorInited = ref(false);
 const onEditorInit = (ev: any) => {
-  console.log('editor===>', ev.detail)
   editor = ev.detail;
   editorInited.value = true;
 }

@@ -1,0 +1,42 @@
+{
+  "name": "div-editor-react",
+  "sideEffects": false,
+  "version": "0.0.1",
+  "author": "xlei1123 <983171730@qq.com>",
+  "private": true,
+  "description": "React specific wrapper for component-library",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "build": "npm run compile",
+    "clean": "rm -rf dist",
+    "compile": "npm run tsc",
+    "tsc": "tsc -p ."
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "devDependencies": {
+    "@types/node": "10.12.9",
+    "@types/react": "16.8.10",
+    "@types/react-dom": "16.8.3",
+    "jest-dom": "^3.0.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "rollup": "^1.21.2",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "typescript": "^3.3.4000"
+  },
+  "dependencies": {
+    "div-editor": "^0.0.1"
+  },
+  "peerDependencies": {
+    "react": ">16.8.6",
+    "react-dom": ">16.8.6"
+  }
+}

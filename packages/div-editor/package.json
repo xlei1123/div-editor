@@ -1,0 +1,52 @@
+{
+  "name": "div-editor",
+  "version": "0.0.1",
+  "author": "xlei1123 <983171730@qq.com>",
+  "description": "A web components editor",
+  "module": "dist/index.js",
+  "main": "dist/index.js",
+  "unpkg": "dist/ionic.js",
+  "private": true,
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "stencil build --docs",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll"
+  },
+  "dependencies": {
+    "@stencil/core": "3.3.0",
+    "@stencil/react-output-target": "0.0.1",
+    "@stencil/vue-output-target": "0.8.5",
+    "@tiptap/core": "^2.0.1",
+    "@tiptap/extension-blockquote": "^2.0.3",
+    "@tiptap/extension-bullet-list": "^2.0.3",
+    "@tiptap/extension-code-block": "^2.0.3",
+    "@tiptap/extension-color": "^2.0.3",
+    "@tiptap/extension-font-family": "^2.0.2",
+    "@tiptap/extension-highlight": "^2.0.3",
+    "@tiptap/extension-image": "^2.0.3",
+    "@tiptap/extension-list-item": "^2.0.3",
+    "@tiptap/extension-ordered-list": "^2.0.3",
+    "@tiptap/extension-task-item": "^2.0.3",
+    "@tiptap/extension-task-list": "^2.0.2",
+    "@tiptap/extension-text-style": "^2.0.3",
+    "@tiptap/pm": "^2.0.1",
+    "@tiptap/react": "^2.0.3",
+    "@tiptap/starter-kit": "^2.0.1",
+    "remixicon": "^3.0.0",
+    "tui-color-picker": "^2.2.8"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.11",
+    "jest": "^27.5.1",
+    "jest-cli": "^27.5.1",
+    "puppeteer": "^19.5.2"
+  },
+  "license": "MIT"
+}

@@ -1,5 +1,5 @@
 {
-  "name": "div-editor",
+  "name": "div-editor-packages",
   "version": "0.0.1",
   "private": true,
   "description": "",
@@ -10,6 +10,15 @@
   "engines": {
     "node": ">=16",
     "pnpm": ">=7"
+  },
+  "pnpm": {
+    "packageExtensions": {
+      "vue-template-compiler": {
+        "peerDependencies": {
+          "vue": "2.7.14"
+        }
+      }
+    }
   },
   "keywords": [],
   "author": "",

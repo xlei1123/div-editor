@@ -1,6 +1,6 @@
 import React, { Component, createElement } from 'react';
-import { DivEditor, toExtention } from 'component-library-react';
-import { Editor } from 'component-library';
+import { DivEditor, toExtention } from 'div-editor-react';
+import { Editor } from 'div-editor';
 import TestClass from './test-class';
 import Counter from './hook';
 import './App.css';

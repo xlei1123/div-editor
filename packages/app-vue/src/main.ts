@@ -4,9 +4,9 @@ import ElementPlus from 'element-plus';
 import 'element-plus/dist/index.css';
 import './assets/base.css';
 import router from './router';
-import { ComponentLibrary } from 'component-library-vue';
+import { ComponentLibrary } from 'div-editor-vue';
 
-createApp(App).use(ComponentLibrary).use(ElementPlus).use(router).mount('#app');
+createApp(App).use(ElementPlus).use(ComponentLibrary).use(router).mount('#app');
 
 
 

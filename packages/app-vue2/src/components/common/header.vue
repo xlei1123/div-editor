@@ -8,11 +8,8 @@
         <li>
           <router-link to="/indexBox/newQuery">新建查询</router-link>
         </li>
-        <li>
-          <router-link to="/indexBox/queryManagement">查询管理</router-link>
-        </li>
         <li class="userInfo">
-          <p>您好，{{teacherInfo.realname}}老师</p>
+          <p>您好，👏欢迎使用div-editor</p>
         </li>
       </ul>
     </div>
