@@ -23,7 +23,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                include: path.resolve(__dirname, '../src'),
+                include: [path.resolve(__dirname, '../src')],
                 use: ['eslint-loader',{
                         loader: 'babel-loader'
                     }
@@ -62,6 +62,7 @@ module.exports = {
         new HTMLwebpackplugin({
             template: path.resolve(__dirname, '../index.html'),
             filename: 'index.html',
+            chunksSortMode: 'none',
             minify:{
                 removeAttributeQuotes:true,   //删除引号，删除不需要引号的值
                 removeComments:true           //删除注释，但是会保留script和style中的注释

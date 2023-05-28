@@ -1,9 +1,10 @@
+import Vue from 'vue'
 import Router from 'vue-router'
-
 import editor from '@/components/editor/index'
 import pro from '@/components/editor/pro'
 import noheader from '@/components/editor/noheader'
 
+Vue.use(Router);
 const router = new Router({
   routes: [
     {

@@ -16,8 +16,7 @@
     "outDir": "dist",
     "removeComments": false,
     "sourceMap": true,
-    "target": "es2017",
-    "types": ["jest"]
+    "target": "es2017"
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"],
   "exclude": ["./__tests__/**", "node_modules", "setupTests.ts"],

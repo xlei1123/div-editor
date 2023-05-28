@@ -3,12 +3,12 @@
     <div class="header">
       <ul class="clearfix">
         <li>
-          <router-link to="/indexBox/index">首页</router-link>
+          <router-link to="/editor/pro">完全编辑器</router-link>
         </li>
         <li>
-          <router-link to="/indexBox/newQuery">新建查询</router-link>
+          <router-link to="/editor/noheader">无头编辑器</router-link>
         </li>
-        <li class="userInfo">
+        <li class="welcome">
           <p>您好，👏欢迎使用div-editor</p>
         </li>
       </ul>
@@ -61,7 +61,7 @@
         color: red;
       }
     }
-    .userInfo{
+    .welcome{
       float: right;
       padding: 20px;
       cursor: pointer;

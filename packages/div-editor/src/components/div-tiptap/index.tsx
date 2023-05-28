@@ -26,6 +26,7 @@ export class DivTiptap {
       content: '',
     });
     this.editorInit.emit(this.editor);
+    this.editor.commands.focus();
   }
   connectedCallback() {
     

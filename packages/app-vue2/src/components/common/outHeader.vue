@@ -1,15 +1,11 @@
-<!--  -->
 <template>
     <div class="top">       
         <ul class="clearfix">
-            <li class="logo" @click="login">榜上有名</li>
-            <li @click="getWxServicer">微信客服</li>
-            <li @click="aboutUs">
-                关于我们
-            </li>
-            <li @click="help">
-                帮助中心
-            </li>
+            <li class="logo"><a href="https://github.com/xlei1123/div-editor">div-editor</a></li>
+            <li>文档</li>
+            <li><a href="https://github.com/xlei1123/div-editor/tree/main/packages/app-react">react-demo</a></li>
+            <li><a href="https://github.com/xlei1123/div-editor/tree/main/packages/app-vue">vue3-demo</a></li>
+            <li><a href="https://github.com/xlei1123/div-editor/tree/main/packages/app-vue2">vue2-demo</a></li>
         </ul>
     </div>
 </template>
@@ -32,7 +28,7 @@ export default {
             this.$router.push('/login')
         },
         getWxServicer(){
-            this.$emit('getWxServicer')
+            
         },
         aboutUs(){
             this.$router.push('/aboutUs')
