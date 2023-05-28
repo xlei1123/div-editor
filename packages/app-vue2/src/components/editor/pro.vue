@@ -1,33 +1,49 @@
-<!--  -->
 <template>
     <div class="aboutUs">
         <div class="content">
-            <div-editor @editorInit="onEditorInit" />
-            <p>
-                <b>客服QQ: </b>983171730
-            </p>
-        </div>
-        <div v-if="wxServicer" class="wxServicer" @click.stop="closeWxServicer">
-            <img :src="'./static/img/wxServicer.png'" alt="">
+            <button @click="insert">插入自定义组件</button>
+            <div-editor @editorInit="onEditorInit" :minHeight.prop="'600px'" :extensions.prop="vueCustomExtensions" />
+            <p><b>客服QQ: </b>983171730</p>
         </div>
     </div>
 </template>
 
 <script>
+import Vue from 'vue';
+import { toExtention } from 'div-editor-vue';
+import Count1 from '../extensions/Count1.vue';
+
 let editor;
 export default {
     data () {
         return {
-            wxServicer:false
+            
         };
     },
 
-    computed: {},
+    computed: {
+        vueCustomExtensions() {
+            console.log('this===>', this, Count1)
+            return [
+                {
+                    name: 'vue_comp',
+                    component: Count1,
+                },
+                ].map((extension) => {
+                return toExtention(extension, this.$createElement, Count1.render.bind(this))
+            });
+        }
+    },
 
     mounted(){},
     methods: {
         onEditorInit(ev) {
             editor = ev.detail;
+        },
+        insert() {
+            editor.commands.insertContent({
+                type: 'vue_comp'
+            })
         }
     }
 }
@@ -61,22 +77,6 @@ export default {
                 font-size: 18px;
                 font-weight: bold;
                 font-style: normal;
-            }
-        }
-        .wxServicer{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.6);
-            img{
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                width: 300px;
-                height: 400px;
-                transform: translate(-50%,-50%);
             }
         }
 

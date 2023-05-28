@@ -8,12 +8,19 @@ import { ComponentLibrary } from 'div-editor-vue';
 require('!style-loader!css-loader!less-loader!./assets/common.less')
 Vue.config.productionTip = false;
 
+Vue.config.ignoredElements = [
+  // 用一个 `RegExp` 忽略所有“div-”开头的元素
+  // 仅在 2.5+ 支持
+  /^div-/
+]
 Vue.use(ComponentLibrary);
+
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
   // template: '<App/>',
+  // components: { App }
   render: h => h(App),
-  components: { App }
 });

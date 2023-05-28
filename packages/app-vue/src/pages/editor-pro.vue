@@ -24,7 +24,6 @@ const vueCustomExtensions = [
 });
 const _extensions = [
   ...vueCustomExtensions,
- 
 ];
 let editor: Editor;
 

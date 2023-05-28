@@ -23,7 +23,6 @@
 
       }
     },
-    props:['teacherInfo'],
     methods:{
 
     },

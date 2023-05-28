@@ -7,9 +7,10 @@
 
 ## Properties
 
-| Property     | Attribute | Description | Type    | Default |
-| ------------ | --------- | ----------- | ------- | ------- |
-| `extensions` | --        |             | `any[]` | `[]`    |
+| Property     | Attribute    | Description | Type     | Default   |
+| ------------ | ------------ | ----------- | -------- | --------- |
+| `extensions` | --           |             | `any[]`  | `[]`      |
+| `minHeight`  | `min-height` |             | `string` | `'300px'` |
 
 
 ## Events

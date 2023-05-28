@@ -10,6 +10,7 @@ import type { JSX } from 'div-editor';
 
 export const DivEditor = /*@__PURE__*/ defineContainer<JSX.DivEditor>('div-editor', undefined, [
   'extensions',
+  'minHeight',
   'editorInit'
 ]);
 
@@ -135,7 +136,7 @@ export const DivMenuTodo = /*@__PURE__*/ defineContainer<JSX.DivMenuTodo>('div-m
 
 
 export const DivTiptap = /*@__PURE__*/ defineContainer<JSX.DivTiptap>('div-tiptap', undefined, [
-  'height',
+  'minHeight',
   'extensions',
   'editorInit'
 ]);

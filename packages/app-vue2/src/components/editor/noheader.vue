@@ -1,11 +1,11 @@
 <template>
   <div class="noheader">
     <div class="menuBar" v-if="editorInited">
-      <div-menu-font-size :editor.prop="editor" />
+      <div-menu-font-size :editor.prop="editor"  />
       <div-menu-font-italic :editor.prop="editor" />
       <div-menu-font-bold :editor.prop="editor" />
     </div>
-    <div-tiptap @editorInit="onEditorInit" class="editorContent"></div-tiptap>
+    <div-tiptap :minHeight.prop="'600px'"  @editorInit="onEditorInit" class="editorContent"></div-tiptap>
   </div>
 </template>
 <script>
@@ -45,7 +45,6 @@
   div-tiptap {
     display: block;
     padding: 10px;
-    height: 300px;
     border: 1px solid #ccc;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;

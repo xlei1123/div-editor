@@ -10,6 +10,7 @@ export { Editor } from "@tiptap/core";
 export namespace Components {
     interface DivEditor {
         "extensions": any[];
+        "minHeight": string;
     }
     interface DivMenu {
         "editor": Editor;
@@ -85,7 +86,7 @@ export namespace Components {
     }
     interface DivTiptap {
         "extensions": any[];
-        "height": string;
+        "minHeight": string;
     }
     interface DivUtilDivider {
     }
@@ -315,6 +316,7 @@ declare global {
 declare namespace LocalJSX {
     interface DivEditor {
         "extensions"?: any[];
+        "minHeight"?: string;
         "onEditorInit"?: (event: DivEditorCustomEvent<Editor>) => void;
     }
     interface DivMenu {
@@ -391,7 +393,7 @@ declare namespace LocalJSX {
     }
     interface DivTiptap {
         "extensions"?: any[];
-        "height"?: string;
+        "minHeight"?: string;
         "onEditorInit"?: (event: DivTiptapCustomEvent<Editor>) => void;
     }
     interface DivUtilDivider {

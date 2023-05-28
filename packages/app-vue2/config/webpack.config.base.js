@@ -67,7 +67,7 @@ module.exports = {
                 removeAttributeQuotes:true,   //删除引号，删除不需要引号的值
                 removeComments:true           //删除注释，但是会保留script和style中的注释
             },
-            inlineSource: 'runtime~.+\\.js',
+            // inlineSource: 'runtime~.+\\.js',
         }),
         new VueLoaderPlugin(),
     ]

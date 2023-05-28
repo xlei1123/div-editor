@@ -43,6 +43,7 @@ export const toExtention = (node: VueNode, h: Function, render: Function) => Nod
           h(node.component, {...HTMLAttributes})
         ]
       )
+      console.log('vnode====>', vnode, render);
       render(vnode, dom); 
       return {
         dom

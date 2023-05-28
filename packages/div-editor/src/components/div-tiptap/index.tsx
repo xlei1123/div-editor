@@ -8,7 +8,7 @@ import StarterKit from '@tiptap/starter-kit';
   shadow: false,
 })
 export class DivTiptap {
-  @Prop() height: string;
+  @Prop() minHeight: string;
   @Prop() extensions: any[] = [];
   @Event() editorInit: EventEmitter<Editor>
   divTiptap!: HTMLDivElement;
@@ -16,7 +16,7 @@ export class DivTiptap {
 
   componentDidLoad() {
     if(this.editor) return;
-    this.divTiptap.style.height = this.height;
+    this.divTiptap.style.minHeight = this.minHeight;
     this.editor = new Editor({
       element: this.divTiptap,
       extensions: [
