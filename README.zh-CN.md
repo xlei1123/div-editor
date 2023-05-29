@@ -4,6 +4,11 @@
 
 <div align="center">
 <a href="https://github.com/xlei1123/div-editor/pulls" target="_blank"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs"/></a>
+
+![GitHub package.json version](https://img.shields.io/github/package-json/v/xlei1123/div-editor?style=plastic)
+
+![div-editor webcomponents](https://img.shields.io/badge/div--editor-web%20components-brightgreen)
+
 </div>
 
 ## Overview
