@@ -12,11 +12,10 @@ A customizable editor for web components, where you can freely choose tags and l
 
 ## Useage
 
-### Browser
-```
-```
+### Vue3
 
-### Vue
+#### config
+
 **Vue3+Vite**
 ```js
 // vite.config.ts
@@ -32,13 +31,6 @@ export default defineConfig({
     }
   )]
 })
-```
-
-```js
-// .vue组件中
-import { DivEditor } from 'div-editor';
-
-<div-editor />
 ```
 
 **Vue3 + webpack**
@@ -60,80 +52,27 @@ module.exports = {
 }
 ```
 
+#### vue3
+
+1. Registor
+```js
+// 入口文件 main.js 
+import { ComponentLibrary } from 'div-editor-vue';
+createApp(App).use(ComponentLibrary).mount('#app');
+```
+
+2. Useage in vueComponent
+As with element-plus, you can use custom elements directly in components，[more](https://github.com/xlei1123/div-editor/tree/main/packages/div-editor/src/components/div-editor)
+
 ```js
 // .vue组件中
-import { DivEditor } from 'div-editor';
-
 <div-editor />
 ```
 
-**Vue2**
+**customExtension in Vue3**
+> Currently supported Vue3, it is relatively simple to use
 
-```js
-// 2.5+ 版本一下 你使用那个自定义元素 就需要将自定义元素写入下面当中.
-//使 Vue 忽略在 Vue 之外的自定义元素，否则，它会假设你忘记注册全局组件或者拼错了组件名称，从而抛出一个关于 Unknown custom element 的警告
-Vue.config.ignoredElements = [
-  'div-editor'
-]
-```
-```js
-// 仅在 2.5+ 支持
-Vue.config.ignoredElements = [
-  // 用一个 `RegExp` 忽略所有“ion-”开头的元素
-  /^div-/
-]
-```
-关于vue中使用自定义元素的更多参考： https://cn.vuejs.org/guide/extras/web-components.html
-
-**Vue3项目中自定义插件**
-> 目前支持vue3， 使用起来也比较简单
-
-```js
-// 自定义插件组件
-/**
- * 自定义插件需满足以下规则
- * 1. 响应式数据不可以写到setup中
- * 2. 引入组件必须写到setup中自动注册
- */
-<template>
-  <div>
-    <HelloWorld :msg="count + ''"></HelloWorld>
-    <span class="label" @click="sum">Vue Component, {{ count }}</span>
-    <button @click="des">点击减一</button>
-  </div>
-</template>
-
-<script lang="ts">
-export default {
-  data() {
-    return {
-      count: 0
-    }
-  },
-  methods: {
-    sum: function() {
-      this.count = this.count + 1;
-    },
-    des: function() {
-      this.count = this.count - 1;
-    }
-  },
-  mounted() {
-    this.count = 100;
-  }
-}
-</script>
-
-<script lang="ts" setup>
-import HelloWorld from './HelloWorld.vue';
-</script>
-
-<style lang="css">
-
-</style>
-```
-
-使用及自定义插件组件注册
+Use and customize component registration
 ```vue
 <script setup lang="ts">
 // 引入div-editor
@@ -142,6 +81,7 @@ import { DivEditor, Editor } from 'div-editor';
 // 引入自定义插件组件
 import Component from './Component.vue';
 
+// 编辑器初始化完成的回调
 let editor: Editor;
 const onEditorInit = (ev: any) => {
   editor = ev.detail;
@@ -165,13 +105,22 @@ const insert = () => {
 </script>
 
 <template>
-  <div-editor @editorInit="onEditorInit" :customExtensions="customExtensions" />
+  <div-editor @editorInit="onEditorInit" .extensions="customExtensions" />
   <button @click="insert">插入自定义组件</button>
 </template>
 
 ```
 
 ### React
+
+
+```js
+import { DivEditor } from 'div-editor-react';
+
+<DivEditor />
+```
+
+
 
 ## Contribute
 
@@ -181,12 +130,3 @@ You are very welcome to join us in developing div-editor, if you want to contrib
 
 [MIT](./LICENSE)
 
-
-
-# div-editor
-
-## icon
-
-https://remixicon.com/
-
-example: https://tiptap.dev/examples/collaborative-editing
