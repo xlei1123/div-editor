@@ -124,6 +124,75 @@ import { DivEditor } from 'div-editor-react';
 <DivEditor />
 ```
 
+**customExtension in React**
+
+```js
+import React, { Component, createElement } from 'react';
+import { DivEditor, toExtention } from 'div-editor-react';
+import { Editor } from 'div-editor';
+import TestClass from './test-class';
+import Counter from './hook';
+import './App.css';
+import ReactDOM from 'react-dom';
+
+interface State {
+  value: number | null;
+}
+
+const customExtensions = [
+  {
+    name: 'react_class',
+    component: TestClass,
+  },
+  {
+    name: 'hook',
+    component: Counter,
+  }
+].map((extension) => {
+  return toExtention(extension, createElement, ReactDOM.render)
+})
+class App extends Component<{}, State> {
+  constructor(props: {}) {
+    super(props);
+
+    this.state = {
+      value: null
+    };
+  }
+  editor: Editor|null = null;
+  onEditorInit = (ev: any) => {
+    this.editor = ev.detail
+  }
+  insertCom = () => {
+    if(!this.editor) return;
+    this.editor.commands.insertContent({
+      type: 'react_class',
+    });
+    this.editor.commands.focus();
+  }
+  insertHook = () => {
+    if(!this.editor) return;
+    this.editor.commands.insertContent({
+      type: 'hook',
+    });
+    this.editor.commands.focus();
+  }
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <DivEditor onEditorInit={this.onEditorInit} extensions={customExtensions} children={undefined} className={undefined}/>
+
+          {this.state.value ? <p>Value is {this.state.value}</p> : null}
+          <button onClick={this.insertCom}>插入class组件</button>
+          <button onClick={this.insertHook}>插入hook组件</button>
+        </header>
+      </div>
+    );
+  }
+}
+export default App;
+```
 ## Contribute
 
 非常欢迎您加入我们一起开发div-editor，如果想要贡献代码请先阅读[这里](./CONTRIBUTING.md)。
