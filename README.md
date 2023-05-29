@@ -75,8 +75,8 @@ As with element-plus, you can use custom elements directly in components，[more
 Use and customize component registration
 ```vue
 <script setup lang="ts">
-// 引入div-editor
-import { DivEditor, Editor } from 'div-editor';
+import { toExtention } from 'div-editor-vue';
+import type { Editor } from 'div-editor';
 
 // 引入自定义插件组件
 import Component from './Component.vue';
@@ -93,7 +93,9 @@ const customExtensions = [
     name: 'vue_comp',
     component: Component,
   },
-]
+].map((extension) => {
+  return toExtention(extension, h, render)
+});
 
 // 在编辑器中插入该组件
 const insert = () => {
