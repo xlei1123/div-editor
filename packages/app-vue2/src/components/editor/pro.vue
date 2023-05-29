@@ -9,7 +9,6 @@
 </template>
 
 <script>
-import Vue from 'vue';
 import { toExtention } from 'div-editor-vue';
 import Count1 from '../extensions/Count1.vue';
 
@@ -35,7 +34,8 @@ export default {
         }
     },
 
-    mounted(){},
+    mounted(){
+    },
     methods: {
         onEditorInit(ev) {
             editor = ev.detail;
