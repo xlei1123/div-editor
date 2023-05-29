@@ -56,14 +56,12 @@ module.exports = {
 
 #### vue3
 
-1. Registor
 ```js
 // 入口文件 main.js 
 import { ComponentLibrary } from 'div-editor-vue';
 createApp(App).use(ComponentLibrary).mount('#app');
 ```
 
-2. Useage in vueComponent
 As with element-plus, you can use custom elements directly in components，[more](https://github.com/xlei1123/div-editor/tree/main/packages/div-editor/src/components/div-editor)
 
 ```js
