@@ -3,11 +3,7 @@
 一个纯原生的web components跨框架的富文本编辑器，你可以像使用div那样的原生标签一样使用它！
 
 <div align="center">
-<a href="https://github.com/xlei1123/div-editor/pulls" target="_blank"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs"/></a>
-
-<a href="https://github.com/xlei1123/div-editor/pulls" target="_blank"><img src="https://img.shields.io/github/package-json/v/xlei1123/div-editor?style=plastic" alt="PRs"/></a>
-
-<a href="https://github.com/xlei1123/div-editor/pulls" target="_blank"><img src="https://img.shields.io/badge/div--editor-web%20components-brightgreen" alt="PRs"/></a>
+<a href="https://github.com/xlei1123/div-editor/pulls" target="_blank"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs"/></a><a href="https://github.com/xlei1123/div-editor/pulls" target="_blank"><img src="https://img.shields.io/github/package-json/v/xlei1123/div-editor?style=plastic" alt="PRs"/></a><a href="https://github.com/xlei1123/div-editor/pulls" target="_blank"><img src="https://img.shields.io/badge/div--editor-web%20components-brightgreen" alt="PRs"/></a>
 
 </div>
 
