@@ -189,9 +189,7 @@ class App extends Component<{}, State> {
     );
   }
 }
-
 export default App;
-
 ```
 
 ## Contribute
