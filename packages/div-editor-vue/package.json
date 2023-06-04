@@ -1,9 +1,8 @@
 {
   "name": "div-editor-vue",
   "sideEffects": false,
-  "version": "0.0.1",
+  "version": "1.0.0-alpha.1",
   "author": "xlei1123 <983171730@qq.com>",
-  "private": true,
   "description": "Vue specific wrapper for div-editor",
   "repository": {
     "type": "git",

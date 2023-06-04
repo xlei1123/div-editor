@@ -1,12 +1,11 @@
 {
   "name": "div-editor",
-  "version": "0.0.1",
+  "version": "1.0.0-alpha.1",
   "author": "xlei1123 <983171730@qq.com>",
   "description": "A web components editor",
   "module": "dist/index.js",
   "main": "dist/index.js",
   "unpkg": "dist/ionic.js",
-  "private": true,
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "files": [
