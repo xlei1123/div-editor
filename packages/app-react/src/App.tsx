@@ -31,11 +31,6 @@ class App extends Component<{}, State> {
     };
   }
   editor: Editor|null = null;
-  updateRangeValue = (newValue: number) => {
-    this.setState(() => ({
-      value: newValue
-    }));
-  };
   onEditorInit = (ev: any) => {
     this.editor = ev.detail
   }
