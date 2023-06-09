@@ -1,6 +1,6 @@
 {
   "name": "div-editor",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "author": "xlei1123 <983171730@qq.com>",
   "description": "A web components editor",
   "module": "dist/index.js",
