@@ -17,8 +17,8 @@
     "url-loader": "^1.1.2",
     "vue": "2.7.14",
     "vue-router": "3.0.1",
-    "div-editor": "0.0.1",
-    "div-editor-vue": "^0.0.1"
+    "div-editor": "1.0.0-alpha.2",
+    "div-editor-vue": "1.0.0-alpha.1"
   },
   "devDependencies": {
     "autoprefixer": "^9.1.3",
