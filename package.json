@@ -7,6 +7,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xlei1123/div-editor.git"
+  },
   "engines": {
     "node": ">=16",
     "pnpm": ">=7"

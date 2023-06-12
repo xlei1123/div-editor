@@ -12,6 +12,11 @@
     "dist/",
     "loader/"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xlei1123/div-editor.git",
+    "directory": "packages/div-editor"
+  },
   "scripts": {
     "build": "stencil build --docs",
     "start": "stencil build --dev --watch --serve",

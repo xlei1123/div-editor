@@ -6,7 +6,8 @@
   "description": "Vue specific wrapper for div-editor",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/xlei1123/div-editor.git",
+    "directory": "packages/div-editor-vue"
   },
   "scripts": {
     "test": "jest",

@@ -6,7 +6,8 @@
   "description": "React specific wrapper for component-library",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/xlei1123/div-editor.git",
+    "directory": "packages/div-editor-react"
   },
   "scripts": {
     "build": "npm run compile",
