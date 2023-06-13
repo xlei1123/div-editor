@@ -2,15 +2,15 @@
 home: true
 # heroImage: /logo.png
 heroText: Div-Editor
-tagline: Web Components 富文本编辑器
+tagline: 一个基于tiptap的Web Components 富文本编辑器
 actionText: 快速上手 →
 actionLink: /start/
 footer: MIT Licensed | Copyright © 2023 by xianglei
 ---
 
-<!-- ### 
-- 第一由于官方不断升级，很多老旧文档依然存在，比如vue开发的自定义工程你能从官方文档中找到好几篇不同方式的开发文档，你可能几个文档挨着试一遍，最终找到能跑通的哪一篇，还不知道后边会不会有坑。
-- 第二，官方文档比较大而全,散落到各个地方，找起来不方便或者根本找不到。你可能读到了很多文档，但是对你当前需要的没有帮助，浪费了大量的时间。此文档是我本人在开发过程中的总结，恰到好处，既精简又满足当前各种业务的开发。 -->
+ ### div-editor
+- 操作菜单粒子化，你可以根据需要随意组合，同时可以覆盖样式。
+- 简单的自定义插件功能，无论是在vue项目中还是在react项目中，你都可以将vue组件或者react组件插入到编辑器中
 
 
 
