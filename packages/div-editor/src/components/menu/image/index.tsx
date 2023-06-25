@@ -15,7 +15,6 @@ export class DivMenuImage {
       const reader = new FileReader();
       reader.readAsDataURL(file);
       reader.onloadend = (e) => {
-        debugger;
         this.editor.commands.setImage({
           src: e.target.result as any
         })

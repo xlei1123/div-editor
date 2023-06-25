@@ -10,7 +10,7 @@ import remixiconUrl from 'remixicon/fonts/remixicon.symbol.svg';
 export class DivMenuNumberList {
   @Prop() editor: Editor
   toggleList = () => {
-    this.editor.chain().focus().toggleOrderedList().run()
+    this.editor.chain().focus().toggleOrderedList().run();
   }
   render() {
     return <button
