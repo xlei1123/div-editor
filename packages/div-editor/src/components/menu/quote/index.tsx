@@ -12,11 +12,11 @@ export class DivMenuQuote {
   @State() isActive: boolean = false
 
   toggleQuote = () => {
-    this.editor.chain().focus().toggleBlockquote().run()
-    this.isActive = this.editor?.isActive('blockquote')
+    this.editor.chain().focus().toggleBlockquote().run();
+    this.isActive = this.editor?.isActive('blockquote');
   }
   componentWillRender() {
-    this.isActive = this.editor?.isActive('blockquote')
+    this.isActive = this.editor?.isActive('blockquote');
   }
   render() {
     return <button

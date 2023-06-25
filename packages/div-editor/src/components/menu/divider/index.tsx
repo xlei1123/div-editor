@@ -12,7 +12,7 @@ export class DivMenuDivider {
   insertDivider = () => {
     this.editor.commands.insertContent({
       type: 'divider'
-    })
+    });
   }
   connectedCallback() {
     
