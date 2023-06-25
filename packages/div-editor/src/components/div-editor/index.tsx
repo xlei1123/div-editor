@@ -31,7 +31,6 @@ export class DivEditor {
   @Event() editorInit: EventEmitter<Editor>
   componentDidRender() {}
   connectedCallback() {
-    console.log('this.extensions===>', this.extensions);
     this._extensions = [
       ...this.extensions,
       Highlight,
